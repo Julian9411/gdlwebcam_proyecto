@@ -1,8 +1,21 @@
 (function (){
     'use strict';
 
+
     let regalo = document.querySelector('#regalo');
     document.addEventListener('DOMContentLoaded', function(){
+
+
+        //ubicacion de la conferencia en el mapa
+        var map = L.map('mapa').setView([20.674855, -103.354017], 18);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+        L.marker([20.674855, -103.354017]).addTo(map)
+        .bindPopup('GdlWebCamp')
+        .openPopup();
 
        //campos datos usuario
        let nombre = document.querySelector('#nombre'),
@@ -30,7 +43,7 @@
             camisas = document.querySelector('#camisa_evento');
         
         
-        pase_dia.addEventListener ('blur', mostrarDias);
+        pase_dia.addEventListener('blur', mostrarDias);
         pase_2_dias.addEventListener('blur', mostrarDias);
         todos_los_dias.addEventListener('blur', mostrarDias );
         calcular.addEventListener('click', calcularMontos);
