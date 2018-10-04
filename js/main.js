@@ -35,6 +35,7 @@
         todos_los_dias.addEventListener('blur', mostrarDias );
         calcular.addEventListener('click', calcularMontos);
         nombre.addEventListener('blur', error);
+        email.addEventListener('blur', validarEmail)
         //Funciones anonimas se llaman automaticamente y no necesitan poner un nombre en la funcion
         apellido.addEventListener('blur', function(){
             if(this.value === '') {
@@ -47,6 +48,12 @@
             }
         })
 
+        function validarEmail(event){
+            event.preventDefault();
+            if (this.value.indexOf("@") < -1){
+                alert("Debe contener almenos un @")
+            }
+        }
 
         function error(event){
             event.preventDefault();
@@ -55,7 +62,7 @@
                 alert("Escribe tu nombre");
                 nombre.style.border='1px solid red';
             } else {
-                nombre.style.border='none';
+                nombre.style.border='1px solid #cccccc';
             }
         }
 
