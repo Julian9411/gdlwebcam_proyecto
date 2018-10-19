@@ -268,12 +268,75 @@ h1.nombre_sitio {
     }
 
 }
+
+/****************************
+lettering
+*****************************/
+
+h1 span {
+    position: relative;
+    text-shadow: 0 10px 40px black;
+}
+
+@media only screen and (min-width: 998px){
+    .char1{
+        top: 20px; 
+        right: -10px; 
+    }
+    .char2 {
+        left: 15px;
+        top: -5px;
+    }
+    .char3{
+        top: 15px;
+        right: 0px;
+    }
+    .char4{
+        top: 8px;
+        right: -8px;
+    }
+    .char5{
+        left: 20px;
+        top: -10px;
+    }
+    .char6{
+        right: 0;
+        top: 5px;
+    }
+    .char7{
+        top: 19px;
+        left: -10px;
+    }
+    .char8{
+        top: -6px;
+        right: 9px;
+    }
+    .char9{
+        left: -10px;
+        top: 15px;
+    }
+    .char10{
+        top: 10px;
+        left: 0;
+    }
+    
+}
+
+
+
 /*****************************
 Barra_navegacion_principal
 *****************************/
 div.barra {
     background-color: #353535;
     padding: 20px 0;
+}
+.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 div.logo {
     width: 80%;
@@ -290,6 +353,10 @@ div.logo img {
 }
 nav.navegacion_principal {
     display: none; 
+    width: 100%;
+}
+.navegacion_principal .activo {
+    border-bottom: 2px solid #fe4918;
 }
 nav.navegacion_principal a {
     font-family: 'Oswald', sans-serif;
@@ -394,6 +461,32 @@ nav.menu_programa a {
     color: #000;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px; 
+    position: relative;
+}
+nav.menu_programa a.activo::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url(../img/img/talleres-flecha.jpg);
+    width: 30px;
+    height: 20px;
+    background-repeat: no-repeat; 
+
+}
+@media only screen and (min-width:480px){
+    nav.menu_programa a.activo::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url(../img/img/talleres-flecha.jpg);
+        width: 30px;
+        height: 20px;
+        bottom: -30px;
+        background-repeat: no-repeat; 
+    }
 }
 @media only screen and (min-width: 768px){
     nav.menu_programa {
@@ -409,6 +502,9 @@ nav.menu_programa a {
         font-size: 1.6em;
         margin-right:10px; 
     }
+}
+div.ocultar {
+    display: none;
 }
 /*************
 Detalle evento
@@ -446,7 +542,7 @@ div.invitado {
     overflow: hidden;
 }
 div.invitado img {
-    max-width: 100%;
+    width: 100%;
     filter: gray;
     -webkit-filter: grayscale(1);
     -webkit-transition: all .6s ease-in-out;
@@ -733,6 +829,13 @@ p.copy {
 /**************************
 Internas
 ***************************/
+/************************
+Galeria
+*************************/
+.galerias a{
+    display: inline-block;
+    padding: 5px;
+}
 
 /*******Registro**********/
 form.registro h3 {
