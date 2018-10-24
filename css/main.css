@@ -673,7 +673,7 @@ div.tabla_precio p.numero {
 Mapa
 ***********************/
 div.mapa {
-    height: 420px;
+    height: 420px!important;
 }
 /*************************
 Testimoniales
@@ -837,6 +837,8 @@ Galeria
     padding: 5px;
 }
 
+
+
 /*******Registro**********/
 form.registro h3 {
     text-align: center;
@@ -943,6 +945,15 @@ div.resumen input {
 #suma_total {
     font-size: 2em;
     color: #fe4918;
+}
+/**********************
+calendario
+************************/
+
+div.dia {
+    width: 50%;
+    float: left;
+    
 }
 
 

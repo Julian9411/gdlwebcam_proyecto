@@ -216,8 +216,9 @@ $(function(){
         var map = L.map('mapa').setView([20.674855, -103.354017], 18);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+                
     
         L.marker([20.674855, -103.354017]).addTo(map)
         .bindPopup('GdlWebCamp')
