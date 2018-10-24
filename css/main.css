@@ -953,7 +953,15 @@ calendario
 div.dia {
     width: 50%;
     float: left;
-    
+    border: 2px solid #e1e1e1;
+}
+@media only screen and (min-width: 760px){
+    div.dia {
+        width: 33.3%;
+    }
+}
+div.dia p {
+    font-size: 1em!important;
 }
 
 

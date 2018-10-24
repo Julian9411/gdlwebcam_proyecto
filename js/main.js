@@ -27,10 +27,9 @@
             suma = document.querySelector('#suma_total');
 
         //extras
-
         let etiquetas = document.querySelector('#etiquetas'),
             camisas = document.querySelector('#camisa_evento');
-        
+  
         
         pase_dia.addEventListener('blur', mostrarDias);
         pase_2_dias.addEventListener('blur', mostrarDias);
@@ -47,7 +46,10 @@
             }else {
                 apellido.style.border='1px solid #cccccc';
             };
+        
         });
+
+        if(document.querySelector('#calcular')){
         email.addEventListener('blur', function(){
             if (this.value === '') {
                 alert("Escribe tu E-mail");
@@ -142,7 +144,10 @@
             
             
         }
+    }
     });
+    
+    
 })();
 
 
