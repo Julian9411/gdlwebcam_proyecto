@@ -147,7 +147,7 @@
     }
     });
     
-    
+
 })();
 
 
@@ -217,7 +217,7 @@ $(function(){
 $(function(){
     "use strict"
         //mapa de ubicacion
-
+    if(document.getElementById('mapa')){
         var map = L.map('mapa').setView([20.674855, -103.354017], 18);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -228,4 +228,5 @@ $(function(){
         L.marker([20.674855, -103.354017]).addTo(map)
         .bindPopup('GdlWebCamp')
         .openPopup();
+    }
 })

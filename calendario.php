@@ -3,7 +3,7 @@
     <section class="seccion contenedor">
         <h2>Calendario de eventos</h2>
 
-        <?php 
+        <?php
             try{
                 require_once('includes/funciones/bd_conexion.php');
                 $sql = "SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
@@ -17,12 +17,12 @@
             }catch (\Exception $e){
                 echo $e->getMessage();
             }
-        
+
         ?>
 
-        <div class="calendario">
+        <div class="calendario clearfix">
 
-            <?php 
+            <?php
 
                 $calendario = array();
 
@@ -36,13 +36,12 @@
                         'icono' => $eventos['icono'],
                         'invitado' => $eventos['nombre_invitado'] . " " .$eventos['apellido_invitado']
                     );
-                    
+
                     $fecha = $eventos['fecha_evento'];
                     $categoria = $eventos['cat_evento'];
-                    
+
                     $calendario[$fecha][] = $evento;
                }?>
-            <div class="clearfix">
             <?php   foreach( $calendario as $dia => $lista_eventos ){
 
                     echo '<h3>';
@@ -53,10 +52,11 @@
                         echo '</i>';
                     echo '</h3>'; ?>
                  <?php   foreach ($lista_eventos as $evento) { ?>
-                    
+
+                        
                         <div class="dia">
-                            
-                            <p class="titulo"><?php echo $eventos['titulo']; ?></p>
+
+                            <p class="titulo"><?php echo $evento['titulo']; ?></p>
                             <p class="hora">
                                 <i class="far fa-clock"></i>
                                 <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
@@ -69,25 +69,22 @@
                                 <i class="fas fa-user"></i>
                                 <?php echo $evento['invitado']; ?>
                             </p>
-                        
+
                         </div>
                 <?php  } //foreach lista eventos?>
 
-                
-            
-            <?php } //foreach calendario ?> 
-            </div>
-                    <pre>
-                    <?php var_dump($calendario);?>
-                    </pre>
-               
+
+
+            <?php } //foreach calendario ?>
+
+
 
             <?php
                 $conn->close();
             ?>
 
         </div>
-        
+
     </section>
 
 <?php include_once 'includes/templates/footer.php' ?>

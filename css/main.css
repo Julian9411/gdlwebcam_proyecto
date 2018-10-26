@@ -162,7 +162,7 @@ h3 {
 .boton.transparente:hover {
     border: 2px solid #e33000;
 }
-.boton.hollow, 
+.boton.hollow,
 .boton.hollow:hover {
     background-color: #fff;
     color: #fe4918;
@@ -177,7 +177,7 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 1em;
     margin-top: 20px;
-    display: inline-block; 
+    display: inline-block;
     transition: all .6s ease;
 }
 .boton:hover{
@@ -207,7 +207,7 @@ div.hero{
     .contenido_header {
         padding-top: 10px;
 
-        } 
+        }
 }
 
 nav.redes_sociales {
@@ -216,10 +216,10 @@ nav.redes_sociales {
 nav.redes_sociales a {
     color: #fff;
     font-size: 2em;
-    margin-right: 20px;  
+    margin-right: 20px;
 }
 nav.redes_sociales a:last-child {
-    margin-right: 0px; 
+    margin-right: 0px;
 }
 .informacion_evento {
     text-align: center;
@@ -280,8 +280,8 @@ h1 span {
 
 @media only screen and (min-width: 998px){
     .char1{
-        top: 20px; 
-        right: -10px; 
+        top: 20px;
+        right: -10px;
     }
     .char2 {
         left: 15px;
@@ -319,7 +319,7 @@ h1 span {
         top: 10px;
         left: 0;
     }
-    
+
 }
 
 
@@ -352,7 +352,7 @@ div.logo img {
     }
 }
 nav.navegacion_principal {
-    display: none; 
+    display: none;
     width: 100%;
 }
 .navegacion_principal .activo {
@@ -390,7 +390,7 @@ nav.navegacion_principal a:last-child:hover {
     nav.navegacion_principal a {
         margin-right:10px;
         padding: 10px 10px;
-        display: inline-block; 
+        display: inline-block;
         width: auto;
         text-align: center;
         margin: 0px;
@@ -401,7 +401,7 @@ div.menu_movil {
     display: block;
     float: right;
     text-align: right;
-    margin-top: 12px; 
+    margin-top: 12px;
 }
 div.menu_movil span {
     height: 8px;
@@ -437,7 +437,7 @@ div.contenido_programa {
 div.programa_evento {
     background-color: rgba(255, 255, 255, .6);
     padding: 15px;
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 @media only screen and (min-width: 768px){
     div.programa_evento {
@@ -452,7 +452,7 @@ div.programa_evento {
 nav.menu_programa {
     width: 100%;
     border-bottom: 1px solid #fe4918;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 nav.menu_programa a {
     display: block;
@@ -460,7 +460,7 @@ nav.menu_programa a {
     text-decoration: none;
     color: #000;
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     position: relative;
 }
 nav.menu_programa a.activo::after{
@@ -470,7 +470,7 @@ nav.menu_programa a.activo::after{
     background-image: url(../img/img/talleres-flecha.jpg);
     width: 30px;
     height: 20px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 
 }
 @media only screen and (min-width:480px){
@@ -485,7 +485,7 @@ nav.menu_programa a.activo::after{
         width: 30px;
         height: 20px;
         bottom: -30px;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
 }
 @media only screen and (min-width: 768px){
@@ -496,11 +496,11 @@ nav.menu_programa a.activo::after{
         display: table-cell;
         font-size: 1.2em;
     }
-    nav.menu_programa a i, 
+    nav.menu_programa a i,
     div.detalle_evento p i {
         color: #fe4918;
         font-size: 1.6em;
-        margin-right:10px; 
+        margin-right:10px;
     }
 }
 div.ocultar {
@@ -518,7 +518,7 @@ div.detalle_evento:nth-child(2) {
 }
 div.detalle_evento p {
     margin-bottom: 20px;
-    font-size: 20; 
+    font-size: 20;
 }
 /*****************
 Seccion Invitados
@@ -581,8 +581,8 @@ Contador
     left: 0;
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center center; 
-    background-attachment: fixed;  
+    background-position: center center;
+    background-attachment: fixed;
 }
 div.contador {
     position: relative;
@@ -679,7 +679,7 @@ div.mapa {
 Testimoniales
 ************************/
 div.testimoniales {
-    padding-bottom:20px; 
+    padding-bottom:20px;
 }
 div.testimonial {
     padding: 5px;
@@ -730,7 +730,7 @@ footer.info_testimonial cite {
     font-size: 12px;
     padding-top: 20px;
     width: 66.6%;
-    float: right; 
+    float: right;
     font-weight: bold;
     font-style: normal;
 }
@@ -789,7 +789,7 @@ footer
 footer {
     background-color: #353535;
     padding-top: 40px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 footer .contenedor > div {
     color: #fff;
@@ -807,7 +807,7 @@ footer h3 {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 footer h3  span {
     color: #fe4918;
@@ -817,7 +817,7 @@ footer .ultimos_tweest {
 }
 footer .menu nav.redes_sociales {
     text-align: left;
-} 
+}
 p.copy {
     background-color: #2e2e2e;
     color: #fff;
@@ -920,7 +920,7 @@ div.resumen div.extras {
 }
 div.resumen div.extras div.orden {
     text-align: left;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 div.resumen div.extras div.orden input {
     margin: 10px 0 0 0 ;
@@ -954,14 +954,28 @@ div.dia {
     width: 50%;
     float: left;
     border: 2px solid #e1e1e1;
+    padding-top: 10px;
+    transition: all .3s ease;
 }
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 768px){
     div.dia {
         width: 33.3%;
+        min-height: 240px;
     }
 }
+div.dia:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.1);
+}
 div.dia p {
-    font-size: 1em!important;
+    font-size: 1em;
+}
+div.calendario h3{
+    background-color: #fe4918;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
 
