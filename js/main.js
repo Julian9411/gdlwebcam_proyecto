@@ -213,6 +213,9 @@ $(function(){
         $('#segundos').html(event.strftime('%S'));
     })
 
+    //colorbox
+
+    $('.invitado-info').colorbox({inline:true, whidth:"50%"});
 
 })
 $(function(){

@@ -836,9 +836,6 @@ Galeria
     display: inline-block;
     padding: 5px;
 }
-
-
-
 /*******Registro**********/
 form.registro h3 {
     text-align: center;
@@ -976,6 +973,14 @@ div.calendario h3{
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+/********************************
+colorbox
+********************************/
+div.cboxElement {
+    padding: 30px!important;
+    text-align: center;
 }
 
 

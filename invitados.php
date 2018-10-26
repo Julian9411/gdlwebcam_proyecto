@@ -20,13 +20,20 @@
             ?>
 
         <li>
-          <div class="invitado"><img src="img/img/<?php echo $invitados['url_imagen']; ?>" alt="invitado1">
-          <p><?php echo $invitados['nombre_invitado']. " " . $invitados['apellido_invitado']; ?></p>
-          </div>
+            <a class="invitado-info" href="#invitado<?php echo $invitados['invitado_id'] ?>">
+                <div class="invitado"><img src="img/img/<?php echo $invitados['url_imagen']; ?>" alt="invitado1">
+                <p><?php echo $invitados['nombre_invitado']. " " . $invitados['apellido_invitado']; ?></p>
+                </div>
+          </a>
         </li>
-        <pre>
-                <?php var_dump($invitados) ?>
-        </pre>
+
+        <div style="display:none;">
+            <div class="invitado-info" id="invitado<?php echo $invitados['invitado_id'] ?>">
+                    <h2><?php echo $invitados['nombre_invitado'] . " " . $invitados['apellido_invitado']; ?></h2>
+                    <img src="img/img/<?php echo $invitados['url_imagen']; ?>" alt="">
+                    <p><?php echo $invitados['descripcion_invitado']; ?></p>
+            </div>
+        </div>
             <?php  } //cierre while invitados?>
           
             </ul>  
