@@ -16,12 +16,22 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/leaflet.css">
-  <link rel="stylesheet" href="css/lightbox.css">
-  <link rel="stylesheet" href="css/colorbox.css">
+  <?php
+  //basename me regresa el valor del nombre de la pagina
+    $archivo = basename($_SERVER['PHP_SELF']);
+  //str_eplace me permite buscar y remplazar una palabra 
+  //toma tres valores que se va a quitar, porque se va a remplazar y de donde
+    $pagina = str_replace(".php", "", $archivo);
+    if($pagina == 'invitados' || $pagina == 'index'){
+        echo '<link rel="stylesheet" href="css/colorbox.css">'; 
+      } else if ($pagina == 'conferencia'){
+        echo '<link rel="stylesheet" href="css/lightbox.css">';
+      }
+  ?>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="<?php echo $pagina; ?>">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->

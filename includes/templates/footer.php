@@ -34,8 +34,18 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/jquery.lettering.js"></script>
-  <script src="js/jquery.colorbox.js"></script>
-  <script src="js/lightbox.js"></script>
+  <?php
+  //basename me regresa el valor del nombre de la pagina
+    $archivo = basename($_SERVER['PHP_SELF']);
+  //str_eplace me permite buscar y remplazar una palabra 
+  //toma tres valores que se va a quitar, porque se va a remplazar y de donde
+    $pagina = str_replace(".php", "", $archivo);
+    if($pagina == 'invitados' || $pagina == 'index'){
+        echo '<script src="js/jquery.colorbox.js"></script>'; 
+      } else if ($pagina == 'conferencia'){
+        echo '<script src="js/lightbox.js"></script>';
+      }
+  ?>
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
   <script src="js/main.js"></script>
 

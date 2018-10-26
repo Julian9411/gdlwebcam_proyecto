@@ -70,42 +70,7 @@
         </div><!--contenedor---->
       </div><!--contenido_programa-->
     </section><!--programa-->
-    <section class="invitados contenedor seccion">
-      <h2>Invitados</h2>
-      <ul class="lista_invitados clearfix">
-        <li>
-          <div class="invitado"><img src="img/img/invitado1.jpg" alt="invitado1">
-          <p>Rafael Bautista</p>
-          </div>
-        </li>
-        <li>
-            <div class="invitado"><img src="img/img/invitado2.jpg" alt="invitado2">
-            <p>Shrie Herrera</p>
-            </div>
-        </li>
-        <li>
-            <div class="invitado"><img src="img/img/invitado3.jpg" alt="invitado3">
-            <p>Gregorio Sanchez</p>
-            </div>
-        </li>
-        <li>
-           <div class="invitado"><img src="img/img/invitado4.jpg" alt="invitado4">
-          <p>Susano Rievera</p>
-          </div>
-        </li>
-        <li>
-          <div class="invitado"><img src="img/img/invitado5.jpg" alt="invitado5">
-           <p>Jarol Garcia</p>
-           </div>
-        </li>
-        <li>
-           <div class="invitado"><img src="img/img/invitado6.jpg" alt="invitado1">
-          <p>Susan Zanchez</p>
-          </div>
-        </li>
-      </ul>
-
-    </section>
+    <?php include_once'includes/templates/invitados.php'; ?>
     <div class="contador parallax">
       <div class="contador">
         <ul class="resumen_evento clearfix">
