@@ -30,7 +30,7 @@
         let etiquetas = document.querySelector('#etiquetas'),
             camisas = document.querySelector('#camisa_evento');
   
-        
+        if(document.querySelector('#calcular')){
         pase_dia.addEventListener('blur', mostrarDias);
         pase_2_dias.addEventListener('blur', mostrarDias);
         todos_los_dias.addEventListener('blur', mostrarDias );
@@ -144,6 +144,7 @@
             
             
         }
+    }
     }
     });
     
