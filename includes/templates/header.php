@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/colorbox.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
