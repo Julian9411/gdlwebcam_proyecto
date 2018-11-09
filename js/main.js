@@ -25,7 +25,7 @@
             botonRegistro = document.querySelector('#btnregistro'),
             listaProductos = document.querySelector('#lista_productos'),
             suma = document.querySelector('#suma_total');
-
+        botonRegistro.disabled = true;
         //extras
         let etiquetas = document.querySelector('#etiquetas'),
             camisas = document.querySelector('#camisa_evento');
@@ -49,7 +49,7 @@
         
         });
 
-        if(document.querySelector('#calcular')){
+//        if(document.querySelector('#calcular')){
         email.addEventListener('blur', function(){
             if (this.value === '') {
                 alert("Escribe tu E-mail");
@@ -119,6 +119,10 @@
                 }
 
                 suma.innerHTML = `$  ${totalPagar.toFixed(2)}`;
+                
+                botonRegistro.disabled = false;
+                document.querySelector('#total_pagar').value=totalPagar;
+
             };
         }
         function mostrarDias(){
@@ -144,7 +148,7 @@
             
             
         }
-    }
+    //}
     }
     });
     
