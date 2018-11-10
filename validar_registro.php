@@ -16,6 +16,7 @@
 
         $boletos = $_POST['boletos'];
         $camisas = $_POST['pedido_camisas'];
+        $etiquetas = $_POST['pedido_etiquetas'];
         
         include_once 'includes/funciones/funciones.php';
 
