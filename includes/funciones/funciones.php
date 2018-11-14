@@ -27,19 +27,6 @@ function eventos_json(&$eventos){
         $eventos_json['eventos'][] = $evento;
     endforeach;
 
-    return json_encode($eventos_json);
-
-
-
-    echo '<pre>';
-    var_dump($eventos_json);
-    echo '</pre>';    
+    return json_encode($eventos_json); 
 }
-
-echo '<pre>';
-var_dump($total_boletos);
-echo '</pre>';
 ?>
-<pre>
-   <?php var_dump($total_boletos) ?>
-</pre>
