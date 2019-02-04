@@ -3,15 +3,7 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
+    
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
@@ -43,8 +35,8 @@
             <span>Eventos</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-list-ul"></i> Ver Todos</a></li>
-            <li><a href="#"><i class="fa fa-plus-circle"></i> Agregar</a></li>
+            <li><a href="lista-evento.php"><i class="fa fa-list-ul"></i> Ver Todos</a></li>
+            <li><a href="crear-evento.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -77,16 +69,22 @@
             <li><a href="#"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
+        <?php
+          if($_SESSION['nivel'] === 2):
+        ?>
         <li class="treeview">
           <a href="#">
           <i class="fa fa-user" aria-hidden="true"></i>
             <span>Administradores</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-list-ul"></i> Ver Todos</a></li>
+            <li><a href="lista-admin.php"><i class="fa fa-list-ul"></i> Ver Todos</a></li>
             <li><a href="crear-admin.php"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
+        <?php
+          endif;
+        ?>
         <li class="treeview">
           <a href="#">
           <i class="fa fa-comments-o" aria-hidden="true"></i>
@@ -97,7 +95,35 @@
             <li><a href="#"><i class="fa fa-plus-circle"></i> Agregar</a></li>
           </ul>
         </li>
+        <!--
+
+        <li class="header">USUARIOS ACTIVOS</li>
+       <?php  /*
+        if($_SESSION['estadoConexion']):
+          $administradores = mostrarAdmin();
+          if($administradores):
+            foreach($administradores as $admin):
+              if($admin['estado_conexion'] == 1):
+        ?>
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="img/<?php echo $admin['url_img'] ?>" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p><?php echo $admin['email'] ?></p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <?php
+              endif;
+            endforeach;
+          endif;
+        endif;
+        */
+        ?>
+        -->
       </ul>
+     
     </section>
     <!-- /.sidebar -->
   </aside>

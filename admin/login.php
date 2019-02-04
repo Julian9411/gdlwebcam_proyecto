@@ -15,18 +15,19 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Inicia sesión aqui</p>
-    <form id="login-admin" name="login-admin-form" method="post" action="insertar-admin.php">
+    <form id="login-admin" name="login-admin-form" method="post" action="modelo-admin.php">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" name="email" placeholder="Email">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
         <span class="fa fa-share form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" name="password" placeholder="Password">
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
         <span class="fa fa-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-12">
           <input type="hidden" name="login-admin" value='1'>
+          <input type="hidden" name="estado_conexion" value="1"> 
           <button  type="submit" class="btn btn-primary btn-block btn-flat">Iniciar Sesión</button>
         </div>
         <!-- /.col -->

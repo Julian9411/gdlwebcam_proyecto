@@ -17,6 +17,15 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+  <!-- Estilos de las tablas -->
+  <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+  <!-- Estilos de las aletas -->
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
+
+  <link rel="stylesheet" href="css/select2.min.css">
+
+
   <link rel="stylesheet" href="css/sweetalert2.min.css">
   <link rel="stylesheet" href="css/admin.css">
 
